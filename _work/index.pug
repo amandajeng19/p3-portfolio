@@ -1,0 +1,31 @@
+//- 
+	Pug (pugjs.org/) is a preprocessing language for HTML. It has it's own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like pug though: 
+	- templating ability 
+	- more legible/simpler markup
+	- HTML compression 
+	- error prevention
+	- reusable code 
+
+doctype html
+html(lang="en")
+
+	head
+		meta(charset="utf-8")
+
+		link(rel="stylesheet", type="text/css", href="css/normalize.css")
+		link(rel="stylesheet", type="text/css", href="css/main.css")
+
+		title Amanda Eng
+
+	body
+		include inc/_nav.pug
+
+		h1#top Hello to my site!
+		p.highlight There are many things we can do with Pug!
+
+	section
+		p One paragraph.
+
+		ul
+			li item 1
+			li item 2
