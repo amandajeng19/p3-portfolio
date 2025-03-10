@@ -8,12 +8,13 @@
 }
 
 h1 {
-  color: #AABB12;
+  color: black;
+}
+
+p {
+  max-width: 40rem;
 }
 
 section p {
-  color: green;
-}
-section li {
-  color: #AABB12;
+  color: black;
 }
