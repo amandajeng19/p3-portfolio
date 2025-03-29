@@ -8,12 +8,14 @@
 }
 
 body {
+  background-color: #F7FAFD;
+  color: #0F0F10;
   font-family: "Instrument Sans", Tahoma, Geneva, sans-serif;
   font-size: 1rem;
 }
 
 h1 {
-  color: black;
+  color: #45B795;
 }
 
 p {

@@ -4,7 +4,15 @@
 	- CSS compression 
 	- reusable code 
 
-$brand-color: #AABB12
+$white: #F7FAFD
+$light-grey: #C2C3C5
+$dark-grey: #7D7F81
+$black: #0F0F10
+
+$teal: #45B795
+$blue: #4593B7
+$purple: #4B4DA8
+$coral: #F89C7B
 
 // Instead of using the curly brackets {} to contain our properties for a selector's styling, SASS uses indenting. The code below will be processed into *{box-sizing:border-box} in our CSS.
 * 
@@ -12,11 +20,14 @@ $brand-color: #AABB12
 	box-sizing: border-box
 
 body
+	background-color: $white
+	color: $black
+
 	font-family: "Instrument Sans", Tahoma, Geneva, sans-serif
 	font-size: 1rem
 
 h1 
-	color: black
+	color: $teal
 
 p
 	max-width: 40rem
