@@ -1,18 +1,36 @@
-/* Syntactically Awesome Stylesheets (SASS, https://sass-lang.com/) is a preprocessing language for CSS. It has its own syntax, meaning you would have to learn another laguage to work with it effectively. There are some advantages to working with a language like SASS though: 
- * - more legible/simpler markup
- * - CSS compression 
- * - reusable code  */
-/* Got the idea of using variables for breakpoints from the SASS documentation:
- * https://sass-lang.com/documentation/at-rules/css/#media */
+/* Amanda Eng's Portfolio */
+/* Breakpoints:
+  480px = 30rem
+  640px = 40rem
+  960px = 60rem
+  1024px = 64rem
+  1280px = 80rem
+  1440px = 90rem
+  1920px = 120rem
+*/
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+:root {
+  /* Created colour styles using CSS variables, learned from https://www.w3schools.com/css/css3_variables.asp */
+  --black: #0F0F10;
+  --dark-grey: #7D7F81;
+  --light-grey: #C2C3C5;
+  --white: #F7FAFD;
+
+  --teal: #45B795;
+  --blue: #4593B7;
+  --purple: #4B4DA8;
+  --coral: #F89C7B;
+}
+
 body {
   margin: 0;
-  background-color: #F7FAFD;
-  color: #0F0F10;
+  background-color: var(--white);
+  color: var(--black);
   font-family: "Instrument Sans", Tahoma, Geneva, sans-serif;
   font-size: 1rem;
 }
@@ -20,9 +38,29 @@ body {
 main {
   margin: 1rem 2rem;
 }
+@media (min-width:30rem) {
+  main {
+    margin: 2rem 4rem;
+  }
+}
+@media (min-width: 60rem) {
+  main {
+    margin: 3rem 8rem;
+  }
+}
+@media (min-width: 90rem) {
+  main {
+    margin: 4rem 12rem;
+  }
+}
+@media (min-width: 120rem) {
+  main {
+    margin: 5rem 16rem;
+  }
+}
 
 h1, h2, h3, h4 {
-  color: #4593B7;
+  color: var(--blue);
 }
 
 h1 {
