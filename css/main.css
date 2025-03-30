@@ -25,6 +25,10 @@
   --blue: #4593B7;
   --purple: #4B4DA8;
   --coral: #F89C7B;
+
+  --light-teal: #82D7BE;
+  --light-blue: #7AC4E7;
+  --light-purple: #9293DF;
 }
 
 body {
@@ -65,7 +69,7 @@ main {
 /* DEFAULT TEXT STYLING ---------------------------------------------------------------------------------------------------- */
 
 h1, h2, h3, h4 {
-  color: var(--blue);
+  font-weight: 600;
 }
 
 h1 {
@@ -88,6 +92,16 @@ p, ol, ul {
   max-width: 40rem;
 }
 
+a {
+  color: var(--purple);
+}
+a:hover, a:active {
+  color: var(--light-purple);
+}
+a:focus {
+  color: var(--coral);
+}
+
 /* NAVIGATION BAR ---------------------------------------------------------------------------------------------------- */
 .nav-main {
   position: fixed;
@@ -97,10 +111,10 @@ p, ol, ul {
 
   margin: 0;
   padding: 0.5rem 1rem;
-  gap: 0.4rem;
 
   display: flex;
   flex-wrap: wrap;
+  gap: 0.3rem;
 
   background-color: var(--white);
   border-bottom: 1px solid var(--light-grey); /* Shorthand for borders: https://www.w3schools.com/cssref/pr_border-bottom.php */
@@ -114,12 +128,11 @@ p, ol, ul {
   font-weight: 400;
   text-decoration: none;
 
-  color: var(--dark-grey);
+  color: var(--black);
   background-color: none;
   
   transition: color 0.25s ease-in-out; /* Shorthand for transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
   transition: background-color 0.25s ease-in-out;
-  /* transition: font-weight 0.25s ease-in-out; */
 }
 .nav-main a:active, .nav-main a:hover, .nav-main a:focus {
   color: var(--white);
@@ -132,4 +145,23 @@ p, ol, ul {
 }
 .nav-main .background-purple:active, .nav-main .background-purple:hover, .nav-main .background-purple:focus {
   background-color: var(--purple);
+}
+
+/* FOOTER ---------------------------------------------------------------------------------------------------- */
+footer {
+  width: 100vw;
+  z-index: 9;
+
+  margin: 0;
+  padding: 0.25rem 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  font-size: 0.8rem;
+
+  background-color: var(--white);
+  border-top: 1px solid var(--light-grey); /* Shorthand for borders: https://www.w3schools.com/cssref/pr_border-bottom.php */
 }
