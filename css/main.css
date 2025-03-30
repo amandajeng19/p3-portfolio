@@ -17,7 +17,7 @@
 :root {
   /* Created colour styles using CSS variables, learned from https://www.w3schools.com/css/css3_variables.asp */
   --black: #0F0F10;
-  --dark-grey: #7D7F81;
+  --dark-grey: #57595A;
   --light-grey: #C2C3C5;
   --white: #F7FAFD;
 
@@ -29,28 +29,31 @@
 
 body {
   margin: 0;
+
   background-color: var(--white);
   color: var(--black);
+
   font-family: "Instrument Sans", Tahoma, Geneva, sans-serif;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 main {
-  margin: 1rem 2rem;
+  margin: 5rem 2rem;
 }
-@media (min-width:30rem) {
+@media (min-width: 30rem) {
   main {
-    margin: 2rem 4rem;
+    margin: 5rem 4rem;
   }
 }
 @media (min-width: 60rem) {
   main {
-    margin: 3rem 8rem;
+    margin: 5rem 8rem;
   }
 }
 @media (min-width: 90rem) {
   main {
-    margin: 4rem 12rem;
+    margin: 5rem 12rem;
   }
 }
 @media (min-width: 120rem) {
@@ -59,20 +62,25 @@ main {
   }
 }
 
+/* DEFAULT TEXT STYLING ---------------------------------------------------------------------------------------------------- */
+
 h1, h2, h3, h4 {
   color: var(--blue);
 }
 
 h1 {
   font-size: 3rem;
+  margin-top: 2.25rem;
 }
 
 h2 {
   font-size: 2.25rem;
+  margin-top: 1.75rem;
 }
 
 h3 {
   font-size: 1.75rem;
+  margin-top: 1.25rem;
 }
 
 h4 {
@@ -81,4 +89,51 @@ h4 {
 
 p, ol, ul {
   max-width: 40rem;
+}
+
+/* NAVIGATION BAR ---------------------------------------------------------------------------------------------------- */
+.nav-main {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+
+  margin: 0;
+  padding: 0.5rem 1rem;
+  gap: 0.4rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey); /* Shorthand for borders: https://www.w3schools.com/cssref/pr_border-bottom.php */
+}
+
+.nav-main a {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: var(--dark-grey);
+  background-color: none;
+  
+  transition: color 0.25s ease-in-out; /* Shorthand for transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+  transition: background-color 0.25s ease-in-out;
+  /* transition: font-weight 0.25s ease-in-out; */
+}
+.nav-main a:active, .nav-main a:hover, .nav-main a:focus {
+  color: var(--white);
+  /* background-color: var(--teal); */
+}
+.nav-main .teal:active, .nav-main .teal:hover, .nav-main .teal:focus {
+  background-color: var(--teal);
+}
+.nav-main .blue:active, .nav-main .blue:hover, .nav-main .blue:focus {
+  background-color: var(--blue);
+}
+.nav-main .purple:active, .nav-main .purple:hover, .nav-main .purple:focus {
+  background-color: var(--purple);
 }
