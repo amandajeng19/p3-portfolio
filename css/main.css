@@ -24,11 +24,12 @@
   --teal: #3CB28F;
   --blue: #4593B7;
   --purple: #5D5EBB;
-  --coral: #F89C7B;
 
   --light-teal: #82D7BE;
   --light-blue: #7AC4E7;
   --light-purple: #9293DF;
+
+  --coral: #F58860; /* Focus colour — inspired by Bristol City Council: http://style.bristol.gov.uk/patterns/colours/ */
 }
 
 body {
@@ -130,21 +131,25 @@ a:focus {
 
   color: var(--black);
   background-color: none;
+  border: 0;
   
   transition: color 0.25s ease-in-out; /* Shorthand for transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
   transition: background-color 0.25s ease-in-out;
 }
-.nav-main a:active, .nav-main a:hover, .nav-main a:focus {
+.nav-main a:active, .nav-main a:hover {
   color: var(--white);
 }
-.nav-main .background-teal:active, .nav-main .background-teal:hover, .nav-main .background-teal:focus {
+.nav-main .background-teal:active, .nav-main .background-teal:hover {
   background-color: var(--teal);
 }
-.nav-main .background-blue:active, .nav-main .background-blue:hover, .nav-main .background-blue:focus {
+.nav-main .background-blue:active, .nav-main .background-blue:hover {
   background-color: var(--blue);
 }
-.nav-main .background-purple:active, .nav-main .background-purple:hover, .nav-main .background-purple:focus {
+.nav-main .background-purple:active, .nav-main .background-purple:hover {
   background-color: var(--purple);
+}
+.nav-main a:focus {
+  background-color: var(--coral);
 }
 
 /* FOOTER ---------------------------------------------------------------------------------------------------- */
