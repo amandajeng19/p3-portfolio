@@ -39,26 +39,26 @@ body {
 }
 
 main {
-  margin: 5rem 2rem;
+  margin: 3rem 2rem;
 }
 @media (min-width: 30rem) {
   main {
-    margin: 5rem 4rem;
+    margin: 3rem 4rem;
   }
 }
 @media (min-width: 60rem) {
   main {
-    margin: 5rem 8rem;
+    margin: 3rem 8rem;
   }
 }
 @media (min-width: 90rem) {
   main {
-    margin: 5rem 12rem;
+    margin: 3rem 12rem;
   }
 }
 @media (min-width: 120rem) {
   main {
-    margin: 5rem 16rem;
+    margin: 3rem 16rem;
   }
 }
 
@@ -69,20 +69,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 3rem;
-  margin-top: 2.25rem;
+  font-size: 2.75rem;
+  padding-top: 2rem;
 }
-
 h2 {
   font-size: 2.25rem;
-  margin-top: 1.75rem;
+  padding-top: 1.5rem;
 }
-
 h3 {
   font-size: 1.75rem;
-  margin-top: 1.25rem;
+  padding-top: 1rem;
 }
-
 h4 {
   font-size: 1.25rem;
 }
@@ -126,14 +123,13 @@ p, ol, ul {
 }
 .nav-main a:active, .nav-main a:hover, .nav-main a:focus {
   color: var(--white);
-  /* background-color: var(--teal); */
 }
-.nav-main .teal:active, .nav-main .teal:hover, .nav-main .teal:focus {
+.nav-main .background-teal:active, .nav-main .background-teal:hover, .nav-main .background-teal:focus {
   background-color: var(--teal);
 }
-.nav-main .blue:active, .nav-main .blue:hover, .nav-main .blue:focus {
+.nav-main .background-blue:active, .nav-main .background-blue:hover, .nav-main .background-blue:focus {
   background-color: var(--blue);
 }
-.nav-main .purple:active, .nav-main .purple:hover, .nav-main .purple:focus {
+.nav-main .background-purple:active, .nav-main .background-purple:hover, .nav-main .background-purple:focus {
   background-color: var(--purple);
 }
