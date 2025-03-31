@@ -27,7 +27,7 @@
 
   --light-teal: #82D7BE;
   --light-blue: #7AC4E7;
-  --light-purple: #9293DF;
+  --light-purple: #d9d9fa;
 
   --coral: #F58860; /* Focus colour — inspired by Bristol City Council: http://style.bristol.gov.uk/patterns/colours/ */
 }
@@ -53,17 +53,17 @@ main {
 }
 @media (min-width: 60rem) {
   main {
-    margin: 3rem 8rem;
+    margin: 3rem 14rem;
   }
 }
 @media (min-width: 90rem) {
   main {
-    margin: 3rem 12rem;
+    margin: 3rem 20rem;
   }
 }
 @media (min-width: 120rem) {
   main {
-    margin: 3rem 16rem;
+    margin: 3rem 28rem;
   }
 }
 
@@ -73,7 +73,7 @@ img {
 }
 
 section {
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 /* DEFAULT TEXT STYLING ---------------------------------------------------------------------------------------------------- */
@@ -87,12 +87,12 @@ h1 {
   padding-top: 2.5rem;
 }
 h2 {
-  font-size: 2.25rem;
-  padding-top: 1rem;
+  font-size: 2rem;
+  padding-top: 0.75rem;
 }
 h3 {
-  font-size: 1.75rem;
-  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  padding-top: 0.25rem;
 }
 h4 {
   font-size: 1.25rem;
@@ -164,8 +164,28 @@ a:focus {
 /* ABOUT PAGE ---------------------------------------------------------------------------------------------------- */
 
 #bio img {
-  border: 8px solid var(--purple);
+  border: 4px solid var(--purple);
   border-radius: 2rem;
+  justify-self: center;
+}
+
+.callout {
+  padding: 2rem;
+
+  background-color: var(--light-purple);
+  
+  border: 4px solid var(--purple);
+  border-radius: 2rem;
+}
+
+.callout h2, .callout h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+.callout p {
+  margin: 0 auto;
 }
 
 /* FOOTER ---------------------------------------------------------------------------------------------------- */

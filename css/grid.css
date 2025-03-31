@@ -10,11 +10,11 @@
 }
 
 .grid.add-gutters {
-	grid-column-gap: 1rem;
+	grid-column-gap: 2rem;
 	grid-row-gap: 1rem;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 50rem) {
 	.grid.two-column {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
