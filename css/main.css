@@ -27,7 +27,7 @@
 
   --light-teal: #82D7BE;
   --light-blue: #7AC4E7;
-  --light-purple: #d9d9fa;
+  --light-purple: #babaf3;
 
   --coral: #F58860; /* Focus colour — inspired by Bristol City Council: http://style.bristol.gov.uk/patterns/colours/ */
 }
@@ -44,27 +44,7 @@ body {
 }
 
 main {
-  margin: 3rem 2rem;
-}
-@media (min-width: 30rem) {
-  main {
-    margin: 3rem 4rem;
-  }
-}
-@media (min-width: 60rem) {
-  main {
-    margin: 3rem 14rem;
-  }
-}
-@media (min-width: 90rem) {
-  main {
-    margin: 3rem 20rem;
-  }
-}
-@media (min-width: 120rem) {
-  main {
-    margin: 3rem 28rem;
-  }
+  margin: 3rem 15vw;
 }
 
 img {
@@ -110,6 +90,10 @@ a:hover, a:active {
 }
 a:focus {
   color: var(--coral);
+}
+
+.italics {
+  font-style: italic;
 }
 
 /* NAVIGATION BAR ---------------------------------------------------------------------------------------------------- */
@@ -159,6 +143,80 @@ a:focus {
 }
 .nav-main a:focus {
   background-color: var(--coral);
+}
+
+/* ALL PROJECTS PAGE ---------------------------------------------------------------------------------------------------- */
+
+.list-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-projects a {
+  color: var(--black);
+  text-decoration: none;
+
+  transition: color 0.25s ease-in-out; /* Shorthand for transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+}
+.list-projects a:active, .list-projects a:hover {
+  color: var(--blue);
+}
+.list-projects a:focus {
+  color: var(--coral);
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  gap: 0 0.75rem;
+
+  border: 4px solid var(--light-grey);
+  border-radius: 2rem;
+
+  transition: border-color 0.25s ease-in-out; /* Shorthand for transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+}
+a:active .project-card, a:hover .project-card {
+  border-color: var(--light-blue);
+}
+a:focus .project-card {
+  border-color: var(--coral);
+}
+
+.project-card .card-content {
+  flex: 1;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.card-content .company {
+  order: -1;
+}
+.card-content .title {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+.card-content .date {
+  margin: 0;
+}
+
+.project-card img {
+  flex: 1;
+  border-radius: 1.75rem;
+}
+@media (min-width: 50rem) {
+  .project-card img {
+    max-width: 45%;
+  }
+  .project-card .card-content {
+    padding: 1rem 0.5rem 1rem 1.5rem;
+  }
 }
 
 /* ABOUT PAGE ---------------------------------------------------------------------------------------------------- */
