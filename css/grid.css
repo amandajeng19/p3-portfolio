@@ -21,3 +21,11 @@
 		grid-auto-flow: row;
 	}
 }
+
+@media (min-width: 90rem) {
+	.grid.three-column {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+	}
+}
