@@ -21,7 +21,7 @@
   --light-grey: #C2C3C5;
   --white: #F7FAFD;
 
-  --teal: #3CB28F;
+  --teal: #1C9973;
   --blue: #4593B7;
   --purple: #5D5EBB;
 
@@ -31,11 +31,6 @@
 
   --coral: #F58860; /* Focus colour — inspired by Bristol City Council: http://style.bristol.gov.uk/patterns/colours/ */
 }
-
-/* COLOURS ---------------------------------------------------------------------------------------------------- */
-.teal { color: var(--teal); }
-.blue { color: var(--blue); }
-.purple { color: var(--purple); }
 
 body {
   margin: 0;
