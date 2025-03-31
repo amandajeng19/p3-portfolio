@@ -32,6 +32,11 @@
   --coral: #F58860; /* Focus colour — inspired by Bristol City Council: http://style.bristol.gov.uk/patterns/colours/ */
 }
 
+/* COLOURS ---------------------------------------------------------------------------------------------------- */
+.teal { color: var(--teal); }
+.blue { color: var(--blue); }
+.purple { color: var(--purple); }
+
 body {
   margin: 0;
 
@@ -105,7 +110,7 @@ a:focus {
 
 /* NAVIGATION BAR ---------------------------------------------------------------------------------------------------- */
 .nav-main {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   z-index: 10;
