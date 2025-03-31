@@ -1,0 +1,23 @@
+/* Based on the IAT 339 Positioning tutorial: https://codepen.io/andrewhaw/pen/c7dbc80425e55d1655216ccd6a325a35 */
+
+* {
+	box-sizing: border-box;
+}
+
+.grid {
+	display: grid;
+    max-width: 90rem;
+}
+
+.grid.add-gutters {
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+@media (min-width: 60rem) {
+	.grid.two-column {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+	}
+}

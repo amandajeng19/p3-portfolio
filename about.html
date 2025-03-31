@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>About</title>
   </head>
   <body>
-    <nav class="nav-main"> 
+    <nav class="nav-main">
       <a class="background-teal" href="index.html">Home</a>
       <a class="background-blue" href="projects/all.html">Projects</a>
       <a class="background-purple" href="about.html">About</a>
     </nav>
-    
-    <main >
+
+    <main>
       <h1>About</h1>
-      <p>Hello! I’m Amanda, an undergraduate design student at SFU’s School of Interactive Arts &amp; Technology. I’m currently completing my first co-op as a Digital Communications Assistant at the Department of Fisheries and Oceans.</p>
-      <p>My focus is in graphic and UX/UI design, but I’m also interested in psychology and education. I’d love to explore the intersection of these industries, and improve my design practice by applying knowledge of how our brains learn and process information.</p>
-      <p>My experiences are a mix of design, illustration, communications, event planning, mentorship, and customer service — and I’m always willing to dive into something new! Otherwise you might find me trying new cafes, taking sky pictures, or teaching myself the ukulele.</p>
+
+      <section id="bio">
+        <div class="grid two-column add-gutters">
+				
+          <img src="img/portrait-800w.jpg" alt="Portrait of Amanda with long black hair, gold glasses, and a white collared shirt" width="800" height="1000">
+        
+          <div class="column">
+            <h2>Hi, I’m Amanda!</h2>
+            <p>
+              I’m an undergraduate design student at SFU’s School of
+              Interactive Arts &amp; Technology. I’m currently completing my first
+              co-op as a Digital Communications Assistant at the Department of
+              Fisheries and Oceans.
+            </p>
+            <p>
+              My focus is in graphic and UX/UI design, but I’m also interested in
+              psychology and education. I’d love to explore the intersection of
+              these industries, and improve my design practice by applying knowledge
+              of how our brains learn and process information.
+            </p>
+            <p>
+              My experiences are a mix of design, illustration, communications,
+              event planning, mentorship, and customer service — and I’m always
+              willing to dive into something new! Otherwise you might find me trying
+              new cafes, taking sky pictures, or teaching myself the ukulele.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="bio grid two-column add-gutters">
+        <img
+          src="img/portrait-400w.jpg"
+          alt=""
+          srcset="
+            img/portrait-400w.jpg   400w,
+            img/portrait-800w.jpg   800w,
+            img/portrait-1200w.jpg 1200w
+          "
+          sizes="
+						(min-width: 40rem) 30vw,
+						80vw
+					"
+        />
+        <div class="bio-text">
+          <h2>Hi, I’m Amanda!</h2>
+          <p>
+            I’m an undergraduate design student at SFU’s School of
+            Interactive Arts &amp; Technology. I’m currently completing my first
+            co-op as a Digital Communications Assistant at the Department of
+            Fisheries and Oceans.
+          </p>
+          <p>
+            My focus is in graphic and UX/UI design, but I’m also interested in
+            psychology and education. I’d love to explore the intersection of
+            these industries, and improve my design practice by applying knowledge
+            of how our brains learn and process information.
+          </p>
+          <p>
+            My experiences are a mix of design, illustration, communications,
+            event planning, mentorship, and customer service — and I’m always
+            willing to dive into something new! Otherwise you might find me trying
+            new cafes, taking sky pictures, or teaching myself the ukulele.
+          </p>
+        </div> -->
+      </section>
+
+      <section class="contact">
+        <h2>Contact Me</h2>
+      </section>
     </main>
 
     <footer>
       <!-- Inspired by the IAT 339 course website to include the typeface reference: https://iat339.alfredosherman.com/teaches/web_design_and_development/ -->
-      <p>This website uses <a href="https://fonts.google.com/specimen/Instrument+Sans">Instrument Sans</a>, an open-source typeface by Rodrigo Fuenzalida and Jordan Egstad.</p>
+      <p>
+        This website uses
+        <a href="https://fonts.google.com/specimen/Instrument+Sans"
+          >Instrument Sans</a
+        >, an open-source typeface by Rodrigo Fuenzalida and Jordan Egstad.
+      </p>
       <p>Copyright &copy; 2025 Amanda Eng.</p>
     </footer>
   </body>
