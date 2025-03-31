@@ -92,6 +92,10 @@ a:focus {
   color: var(--coral);
 }
 
+.italics {
+  font-style: italic;
+}
+
 /* NAVIGATION BAR ---------------------------------------------------------------------------------------------------- */
 .nav-main {
   position: absolute;
