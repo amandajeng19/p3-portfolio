@@ -26,7 +26,7 @@
   --purple: #5D5EBB;
 
   --light-teal: #82D7BE;
-  --light-blue: #7AC4E7;
+  --light-blue: #acdaf0;
   --light-purple: #babaf3;
 
   --coral: #F58860; /* Focus colour — inspired by Bristol City Council: http://style.bristol.gov.uk/patterns/colours/ */
@@ -44,7 +44,7 @@ body {
 }
 
 main {
-  margin: 3rem 15vw;
+  margin: 3rem 12.5vw;
 }
 
 img {
@@ -145,6 +145,35 @@ a:focus {
   background-color: var(--coral);
 }
 
+/* CALLOUTS ---------------------------------------------------------------------------------------------------- */
+
+.callout {
+  padding: 2rem;
+
+  background-color: var(--light-grey);
+  
+  border: 4px solid var(--dark-grey);
+  border-radius: 2rem;
+}
+.callout.blue {
+  border-color: var(--blue);
+  background-color: var(--light-blue);
+}
+.callout.purple {
+  border-color: var(--purple);
+  background-color: var(--light-purple);
+}
+
+.callout h2, .callout h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+.callout p {
+  margin: 0 auto;
+}
+
 /* ALL PROJECTS PAGE ---------------------------------------------------------------------------------------------------- */
 
 .list-projects {
@@ -217,6 +246,13 @@ a:focus .project-card {
   .project-card .card-content {
     padding: 1rem 0.5rem 1rem 1.5rem;
   }
+}
+
+/* THE PEAK ---------------------------------------------------------------------------------------------------- */
+#overview img {
+  border: 4px solid var(--blue);
+  border-radius: 2rem;
+  align-self: center;
 }
 
 /* ABOUT PAGE ---------------------------------------------------------------------------------------------------- */
